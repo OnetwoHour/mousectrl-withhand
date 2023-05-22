@@ -20,8 +20,8 @@ if __name__ == '__main__':
     var = mousecontrol.main()
     m.assert_not_called()
 
-    for i in range(500):
-        # t.test_result(m())
+    for i in range(10):
+        t.test_result(m())
         t.test_result(next(var))
 
     m.assert_called()
